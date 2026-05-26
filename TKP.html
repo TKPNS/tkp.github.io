@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>TKP - Navigációs Rendszer</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+            rel="stylesheet"
+            href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+</head>
+
+<body class="h-screen w-full flex flex-col bg-[#1a1a1a] overflow-hidden select-none">
+
+<nav class="flex-none bg-black text-[#c8a96e] text-center px-2.5 py-4 font-mono !text-[15px] tracking-[3px] uppercase font-bold z-10 shadow-md">
+    <h1>Téridő Karbantartó Parancsnokság</h1>
+    <h1 class="text-xs tracking-[2px] opacity-80 mt-1">Navigációs Rendszer</h1>
+</nav>
+
+<section class="flex-1 w-full max-w-5xl mx-auto p-4 flex items-center justify-center min-h-0">
+
+    <div id="map" class="w-full h-full max-h-full aspect-[9/16] sm:aspect-auto rounded-xl shadow-2xl transition-all duration-300
+        /* --- LAYER CONTROL --- */
+        [&_.leaflet-control-layers]:bg-neutral-900
+        [&_.leaflet-control-layers]:text-neutral-200
+        [&_.leaflet-control-layers]:border-neutral-800
+        [&_.leaflet-control-layers-toggle]:bg-neutral-900
+        [&_.leaflet-control-layers-separator]:border-neutral-800
+        [&_input]:w-4
+        [&_input]:h-4
+        [&_input]:accent-[#c8a96e]
+
+        /* Nagyobb betűméret */
+        [&_.leaflet-control-layers]:text-base
+        [&_.leaflet-control-layers-list]:p-2
+
+        /* --- ZOOM GOMBOK  --- */
+        [&_.leaflet-control-zoom-in]:bg-neutral-900
+        [&_.leaflet-control-zoom-in]:text-neutral-200
+        [&_.leaflet-control-zoom-in]:border-b-neutral-800
+
+        [&_.leaflet-control-zoom-out]:bg-neutral-900
+        [&_.leaflet-control-zoom-out]:text-neutral-200
+
+        /* Zoom gombok hover */
+        [&_.leaflet-control-zoom-in:hover]:bg-neutral-800
+        [&_.leaflet-control-zoom-out:hover]:bg-neutral-800
+
+        /* A gombok külső szegélye */
+        [&_.leaflet-bar]:border-neutral-800
+        [&_.leaflet-bar]:shadow-2xl
+
+        /* --- ATTRIBUTION  --- */
+        [&_.leaflet-control-attribution]:bg-neutral-900/80
+        [&_.leaflet-control-attribution]:text-neutral-400
+        [&_.leaflet-control-attribution_a]:text-[#c8a96e]
+        [&_.leaflet-control-attribution_a:hover]:underline">
+    </div>
+
+</section>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet-textpath/leaflet.textpath.js"></script>
+<script src="map.js"></script>
+
+</body>
+</html>
