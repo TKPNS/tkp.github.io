@@ -49,10 +49,50 @@ const pontok = {
         },
         {
             "type": "Feature",
+            "properties": { "Id": 1.2 },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [19.69998, 46.91109, 0.0]
+            }
+        },
+        {
+            "type": "Feature",
             "properties": { "Id": 2 },
             "geometry": {
                 "type": "Point",
-                "coordinates": [19.697053, 46.903139, 0.0]
+                "coordinates": [19.69877, 46.91010, 0.0]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": { "Id": 3 },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [19.69460, 46.90864, 0.0]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": { "Id": 4 },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [19.69390, 46.90737, 0.0]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": { "Id": 5 },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [19.69658, 46.90611, 0.0]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": { "Id": 6 },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [19.69805, 46.90398, 0.0]
             }
         }
     ]
